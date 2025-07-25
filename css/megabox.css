@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+    border: 0.3px solid black;
+}
+/*banner*/
+header{
+    height: 500px;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+    justify-content: space-between;
+
+}
+.Banner--left{
+    width: 100px;
+    display: inline-block;
+}
+.Banner--left nav {
+    display: inline-block;
+}
+.Banner--logo{
+
+}
+.Banner--right{
+
+}
+
+header nav, header span{
+    /*display: inline-block;*/
+    list-style-type: none;
+}
+/*boxoffice*/
+main{
+    background-color: rgb(254, 208, 208);
+}
+/*curation*/
+.curation{
+    background-color: mediumpurple;
+}
+/*megaboxInfo*/
+.megaboxInfo{
+    background-color: cadetblue;
+}
+/*footer*/
+footer{
+    background-color: wheat;
+}
