@@ -3,24 +3,36 @@
     padding:0;
     border: 0.3px solid black;
 }
-/*banner*/
+li{
+    list-style-type: none;
+}
+/*banner**********************************************************************/
 header{
-    height: 500px;
+    height: 500px; /*100px*/
     width: 100%;
     background-color: grey;
     display: flex;
-    justify-content: space-between;
-
+    font-size: 10px;
 }
 .Banner--left{
-    width: 100px;
-    display: inline-block;
+    display: flex;
+    justify-content: start;
+    /*width: 40%;*/
+    width: 400px;
+
+
 }
-.Banner--left nav {
+.Banner--customerMenu-left{
     display: inline-block;
+    width: 400px;
+}
+.Banner--siteMenu-left{
+    display: inline-block;
+
 }
 .Banner--logo{
-
+    display: flex;
+    justify-content: center;
 }
 .Banner--right{
 
@@ -30,15 +42,15 @@ header nav, header span{
     /*display: inline-block;*/
     list-style-type: none;
 }
-/*boxoffice*/
+/*boxoffice*******************************************************************/
 main{
-    background-color: rgb(254, 208, 208);
+    background-color: rgb(149, 217, 235);
 }
-/*curation*/
+/*curation********************************************************************/
 .curation{
     background-color: mediumpurple;
 }
-/*megaboxInfo*/
+/*megaboxInfo******************************************************************/
 .megaboxInfo{
     background-color: cadetblue;
 }
