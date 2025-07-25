@@ -12,67 +12,84 @@
   <!-- 배너 -->
   <header>
     <!-- 배너 : 로고 왼쪽 -->
-    <section class="Banner-left">
-      <div class="Banner--customerMenu-left">
-        <ul>
-          <li><a href="">VIP LOUNGE</a></li>
-          <li><a href="">멤버십</a></li>
-          <li><a href="">고객센터</a></li>
-        </ul>
-      </div>
-    </section>
+    <div class="Banner--left">
+      <ul class="Banner--customerMenu-left">
+        <li><a href="">VIP LOUNGE</a></li>
+        <li><a href="">멤버십</a></li>
+        <li><a href="">고객센터</a></li>
+      </ul>
+      <ul class="Banner--siteMenu-left">
+        <li><a href="">전체 메뉴</a></li>
+        <li><a href="">검색</a></li>
+        <li><a href="">VIP LOUNGE</a></li>
+        <li><a href="">멤버십</a></li>
+        <li><a href="">고객센터</a></li>
+      </ul>
+    </div>
     <!-- 배너 : 로고 -->
     <div id="Banner--logo">
-      <img src="" alt="magabox-logo">
+      <img src="./../img/logo-white_new2.png" alt="magabox-logo" height="40px">
     </div>
     <!-- 배너 : 로고 오른쪽 -->
     <section class="Banner--right">
-      <nav class="Banner--customerMenu-right">
-        <ul>
-          <li><img src="" alt="로그인"></li>
-          <li><img src="" alt="회원가입"></li>
-          <li><img src="" alt="빠른예매"></li>
+      <nav>
+        <ul class="Banner--customerMenu-right">
+          <li><a href="">로그인</a>로그인</li>
+          <li><a hreg="">회원가입</a></li>
+          <li><a href="">고객센터</a></li>
         </ul>
       </nav>
-      <nav class="Banner--siteMenu-right">
-        <ul>
-          <li><img src="" alt="이벤트"></li>
-          <li><img src="" alt="스토어"></li>
-          <li><img src="" alt="혜택"></li>
+      <nav>
+        <ul class="Banner--siteMenu-right">
+          <li><img src="./../img/gnb-txt-event-white.png" alt="이벤트"></li>
+          <li><img src="../img/gnb-txt-store-white.png" alt="스토어"></li>
+          <li><img src="../img/gnb-txt-benefit-white.png" alt="혜택"></li>
+
+          <li><img src="../img/ico-schedule-white.png" alt="캘린더"></li>
+          <li><img src="../img/ico-mymega-white.png" alt="계정"></li>
         </ul>
       </nav>
-      <span class="Banner--rightright">
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
-      </span>
+
     </section>
-    <!-- 사이트맵 -->
-    <!-- 사이트맵 메뉴 좌상단: movie -->
-    <!-- 사이트맵 메뉴 좌하단: company -->
-    <!-- 사이트맵 메뉴 우측:  right-->
   </header>
+
+  <section id="sitemap"> <!-- 사이트맵 -->
+    <!-- 사이트맵 메뉴 좌상단: movie -->
+    <div class="sitemap">movie</div>
+    <!-- 사이트맵 메뉴 좌하단: company -->
+    <div class="sitemap">compant</div>
+    <!-- 사이트맵 메뉴 우측:  right-->
+    <div class="sitemap">right</div>
+  </section>
+
 
   <main> <!-- 박스오피스 -->
     <nav class="boxoffice">
-      <div id="boxoffice-titile"></div>
-      <div id="boxoffice-more"></div>
+      <div id="boxoffice-titile">
+        <b>박스오피스</b>
+        <span>더 많은 영화보기 +</span>
+      </div>
       <div class="boxoffice-movie-">
-        <span>박스오피스</span>
-        <span>더 많은 영화보기 <img src="" alt="+모양 아이콘"></span>
         <ul>
-          <li id="boxoffice-now_movie"><img src="" alt="영화포스터1"><span></span><span></span></li>
-          <li id="boxoffice-now_movie"><img src="" alt="영화포스터2"><span></span><span></span></li>
-          <li id="boxoffice-now_movie"><img src="" alt="영화포스터3"><span></span><span></span></li>
-          <li id="boxoffice-now_movie"><img src="" alt="영화포스터4"><span></span><span></span></li>
+          <li class="boxoffice-now_movie"><img src="../img/dltk.jpg" alt="영화포스터1">
+            <button type="submit">하트</button>
+            <button type="button">버튼</button>
+          </li>
+          <li class="boxoffice-now_movie"><img src="" alt="영화포스터2">
+            <span></span><span></span>
+          </li>
+          <li class="boxoffice-now_movie"><img src="" alt="영화포스터3">
+            <span></span><span></span>
+          </li>
+          <li class="boxoffice-now_movie"><img src="" alt="영화포스터4">
+            <span></span><span></span>
+          </li>
         </ul>
       </div>
       <div class="boxoffice-menu">
         <ul>
           <li id="boxoffice-menu1">
             <div>boxoffice-menu1</div>
-            <img src="" alt="영화포스터1">
             <button></button>
           </li>
           <li id="boxoffice-menu2">

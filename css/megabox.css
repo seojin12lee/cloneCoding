@@ -1,60 +1,116 @@
 *{
     margin:0;
     padding:0;
-    border: 0.3px solid black;
+    box-sizing: border-box;
+    /* width: 100%; */
 }
 li{
     list-style-type: none;
 }
 /*banner**********************************************************************/
 header{
-    height: 500px; /*100px*/
+    border: 0.3px solid black;
+    height: 50px; /*100px*/
     width: 100%;
     background-color: grey;
     display: flex;
+    justify-content: space-between;
     font-size: 10px;
 }
-.Banner--left{
+.Banner--left {
     display: flex;
-    justify-content: start;
-    /*width: 40%;*/
-    width: 400px;
-
-
+    flex-direction: column;
+    border: 0.3px solid black;
+    width: 40%;
 }
 .Banner--customerMenu-left{
-    display: inline-block;
-    width: 400px;
+    border: 0.3px solid black;
+    /*display: inline; /*border + display -> 테두리가 사라질 수 있따*/
+    display: flex;
+    flex-direction: row;
+    float: left;
+    width: 50%;
 }
 .Banner--siteMenu-left{
-    display: inline-block;
-
-}
-.Banner--logo{
+    border: 0.3px solid black;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    font-size: 15px;
+}
+#Banner--logo{
+    border: 0.3px solid black;
+    width: 100px auto;
 }
 .Banner--right{
-
+    border: 0.3px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
 }
-
-header nav, header span{
-    /*display: inline-block;*/
-    list-style-type: none;
+.Banner--customerMenu-right{
+    border: 0.3px solid black;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+.Banner--siteMenu-right{
+    border: 0.3px solid black;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+/*sitemap*********************************************************************/
+#sitemap .sitemap{
+    display: hidden;
 }
 /*boxoffice*******************************************************************/
 main{
-    background-color: rgb(149, 217, 235);
+    height: 600px;
+    /* background-image: url('./../img/background_img.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgb(44, 44, 44); */
+}
+#boxoffice--title{
+    text-align: center;
+    text-decoration: underline;
+    display: flex;
+    border: 0.3px solid black;
+    
+}
+#boxoffice--title span{
+    border: 0.3px solid black;
+    float: right;
+    width: 20px;
+}
+.boxoffice-movie-{
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-around; */
+    /* justify-content: center; */
+}
+.boxoffice-movie- ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* justify-content: center; */
+}
+.boxoffice-now_movie{
+    border: 0.3px solid black;
+
 }
 /*curation********************************************************************/
 .curation{
+    height: 400px;
     background-color: mediumpurple;
 }
 /*megaboxInfo******************************************************************/
 .megaboxInfo{
+    height: 250px;
     background-color: cadetblue;
 }
 /*footer*/
 footer{
+    height: 100px;;
     background-color: wheat;
 }
