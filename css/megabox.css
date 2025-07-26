@@ -17,12 +17,14 @@ header{
     justify-content: space-between;
     font-size: 10px;
 }
+/***** 배너의 로고의 왼쪽 부분 *****/
 .Banner--left {
     display: flex;
     flex-direction: column;
     border: 0.3px solid black;
     width: 40%;
 }
+/* 왼쪽 부분 상단 */
 .Banner--customerMenu-left{
     border: 0.3px solid black;
     /*display: inline; /*border + display -> 테두리가 사라질 수 있따*/
@@ -31,28 +33,33 @@ header{
     float: left;
     width: 50%;
 }
+/* 왼쪽 부분 하단 */
 .Banner--siteMenu-left{
     border: 0.3px solid black;
     display: flex;
     flex-direction: row;
     font-size: 15px;
 }
+/***** 배너의 로고 부분 *****/
 #Banner--logo{
     border: 0.3px solid black;
     width: 100px auto;
 }
+/***** 배너의 로고의 오른쪽 부분 *****/
 .Banner--right{
     border: 0.3px solid black;
     display: flex;
     flex-direction: column;
     width: 40%;
 }
+/* 오른쪽 부분 상단 */
 .Banner--customerMenu-right{
     border: 0.3px solid black;
     display: flex;
     flex-direction: row;
     float: right;
 }
+/* 오른쪽 부분 하단 */
 .Banner--siteMenu-right{
     border: 0.3px solid black;
     display: flex;
@@ -69,36 +76,82 @@ main{
     /* background-image: url('./../img/background_img.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: rgb(44, 44, 44); */
+    background-color: rgb(136, 135, 135);
 }
+/**** 박스오피스 제목라인 ****/
 #boxoffice--title{
-    text-align: center;
+    /* display: inline-block;  */
+}
+#boxoffice--title div{
     text-decoration: underline;
-    display: flex;
-    border: 0.3px solid black;
-    
+    /* border: 0.3px solid black; */
+    text-align: center;
 }
+/* 더 많은 영화보기  */
 #boxoffice--title span{
-    border: 0.3px solid black;
+    /* border: 0.3px solid black; */
+    display: flex;
     float: right;
-    width: 20px;
-}
-.boxoffice-movie-{
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-around; */
-    /* justify-content: center; */
-}
+    /* position: relative; */
+    bottom: 25px;;
+} 
+/**** 박스오피스 영화 *****/
 .boxoffice-movie- ul{
+    /** 박스오피스 영화부분 전체 틀 **/
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     /* justify-content: center; */
+    width: 100%;
+    height: 440px;
 }
 .boxoffice-now_movie{
-    border: 0.3px solid black;
-
+    /* border: 0.3px solid black; */
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
+    border-radius: 6px;
 }
+/*** 박스오피스 영화의 버튼들 ***/
+.boxoffice-now_movie div{
+    display: flex;
+    margin-top: 6px;
+}
+.btn-heart{
+    height: 36px;
+    width: 80px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.btn-reserv{
+    height: 36px;
+    width: 170px;
+    background-color: rgb(38, 162, 193);
+    /* background-color: #037b94; */
+    border-radius: 5px;
+}
+/**** 박스오피스 메뉴 ****/
+.boxoffice-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(47, 47, 47, 0.633);
+    padding: 10px;
+}
+.boxoffice-menu li{
+    color: white;
+    border: 0.3px solid black;
+    /*[]  이미지 중앙 정렬  */
+    /* 돋보기 버트 -> 이미지 추가, 배경 없게, 입력창 옆에서 뜨도록 수정 */
+}
+
+/*** 제일 아래 마우스  ***/
+#boxoffice-mouse{
+    text-align: center;
+}
+
 /*curation********************************************************************/
 .curation{
     height: 400px;
