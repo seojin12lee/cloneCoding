@@ -1,22 +1,34 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     /* width: 100%; */
 }
-li{
+
+li {
     list-style-type: none;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
 /*banner**********************************************************************/
-header{
+header {
+    padding: 0px 100px;
     border: 0.3px solid black;
-    height: 50px; /*100px*/
+    height: 50px;
+    /*100px*/
     width: 100%;
     background-color: grey;
     display: flex;
     justify-content: space-between;
     font-size: 10px;
+    color: white;
+
 }
+
 /***** 배너의 로고의 왼쪽 부분 *****/
 .Banner--left {
     display: flex;
@@ -24,8 +36,9 @@ header{
     border: 0.3px solid black;
     width: 40%;
 }
+
 /* 왼쪽 부분 상단 */
-.Banner--customerMenu-left{
+.Banner--customerMenu-left {
     border: 0.3px solid black;
     /*display: inline; /*border + display -> 테두리가 사라질 수 있따*/
     display: flex;
@@ -33,70 +46,91 @@ header{
     float: left;
     width: 50%;
 }
+
 /* 왼쪽 부분 하단 */
-.Banner--siteMenu-left{
+.Banner--siteMenu-left {
     border: 0.3px solid black;
     display: flex;
     flex-direction: row;
     font-size: 15px;
 }
+
 /***** 배너의 로고 부분 *****/
-#Banner--logo{
+#Banner--logo {
     border: 0.3px solid black;
     width: 100px auto;
 }
+
 /***** 배너의 로고의 오른쪽 부분 *****/
-.Banner--right{
+.Banner--right {
     border: 0.3px solid black;
     display: flex;
     flex-direction: column;
     width: 40%;
 }
+
 /* 오른쪽 부분 상단 */
-.Banner--customerMenu-right{
+.Banner--customerMenu-right {
     border: 0.3px solid black;
     display: flex;
     flex-direction: row;
     float: right;
 }
+
 /* 오른쪽 부분 하단 */
-.Banner--siteMenu-right{
+.Banner--siteMenu-right {
     border: 0.3px solid black;
     display: flex;
     flex-direction: row;
     font-size: 15px;
 }
+
 /*sitemap*********************************************************************/
-#sitemap .sitemap{
+#sitemap .sitemap {
     display: hidden;
+    color: white;
+
 }
+
 /*boxoffice*******************************************************************/
-main{
-    height: 600px;
+main {
+    height: 700px;
     /* background-image: url('./../img/background_img.jpg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(136, 135, 135);
+    color: white;
+
 }
+
+#background_img {
+    z-index: -100;
+}
+
 /**** 박스오피스 제목라인 ****/
-#boxoffice--title{
+#boxoffice--title {
     /* display: inline-block;  */
 }
-#boxoffice--title div{
-    text-decoration: underline;
+
+#boxoffice--title {
+    text-decoration: underline white;
     /* border: 0.3px solid black; */
     text-align: center;
+    font-size: 30px;
 }
+
 /* 더 많은 영화보기  */
-#boxoffice--title span{
+#boxoffice--title span {
     /* border: 0.3px solid black; */
     display: flex;
     float: right;
     /* position: relative; */
-    bottom: 25px;;
-} 
+    bottom: 25px;
+    font-size: 20px;
+}
+
 /**** 박스오피스 영화 *****/
-.boxoffice-movie- ul{
+.boxoffice-movie- ul {
     /** 박스오피스 영화부분 전체 틀 **/
     display: flex;
     flex-direction: row;
@@ -105,7 +139,8 @@ main{
     width: 100%;
     height: 440px;
 }
-.boxoffice-now_movie{
+
+.boxoffice-now_movie {
     /* border: 0.3px solid black; */
     display: flex;
     flex-direction: column;
@@ -113,57 +148,238 @@ main{
     height: 350px;
     border-radius: 6px;
 }
+
 /*** 박스오피스 영화의 버튼들 ***/
-.boxoffice-now_movie div{
+.boxoffice-now_movie div {
     display: flex;
     margin-top: 6px;
 }
-.btn-heart{
+
+.btn-heart {
     height: 36px;
     width: 80px;
     background-color: black;
-    color: white;
     border-radius: 5px;
 }
-.btn-reserv{
+
+.btn-reserv {
     height: 36px;
     width: 170px;
     background-color: rgb(38, 162, 193);
     /* background-color: #037b94; */
     border-radius: 5px;
 }
+
 /**** 박스오피스 메뉴 ****/
-.boxoffice-menu{
+.boxoffice-menu {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     background-color: rgba(47, 47, 47, 0.633);
     padding: 10px;
 }
-.boxoffice-menu li{
-    color: white;
+
+.boxoffice-menu {
     border: 0.3px solid black;
     /*[]  이미지 중앙 정렬  */
+    align-items: center;
     /* 돋보기 버트 -> 이미지 추가, 배경 없게, 입력창 옆에서 뜨도록 수정 */
 }
 
+#search-movieName-div {
+    border-bottom: 0.2px solid white;
+}
+
+#search-movieName {
+    /* margin: 100%;
+    height: 100%; */
+    background-color: transparent;
+    padding: 7px;
+}
+
+.boxoffice-menu-item a {
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.boxoffice-menu-img {
+    align-items: center;
+}
+
+
 /*** 제일 아래 마우스  ***/
-#boxoffice-mouse{
+#boxoffice-mouse {
+    height: 48px;
     text-align: center;
+    margin-top: 15px;
+    padding-top: 15px;
+
 }
 
 /*curation********************************************************************/
-.curation{
-    height: 400px;
+.curation {
+    height: 840px;
     background-color: mediumpurple;
+    display: flex;
+    flex-direction: row;
+    color: white;
+
 }
+
+.curation-top {
+    height: 35px;
+    margin: 50px 0px 40px 0px;
+    border: 0.3px solid black;
+}
+
+/**** 큐레이션 왼쪽 부분 *************************/
+.curation-left {
+    /* border: 0.3px solid black; */
+    width: 300px;
+    /* 너비 지정 */
+    margin-left: 20px;
+}
+
+/*** .curation-top 부분 *****/
+#curation-title {
+    font-size: 1.4em;
+    text-align: left;
+    /* font-weight: ; */
+    /* hn 태그에서 아예 안 먹음 */
+    letter-spacing: -1px;
+    /* 미묘한 차이 있음 */
+}
+
+/*** 큐레이션 메인  ******/
+#curation-mainFilm img {
+    width: 300px;
+    height: 430px;
+    border-radius: 8px;
+}
+
+
+#btn-info-curation,
+#btn-reserv-curation {
+    width: 145px;
+    height: 50px;
+    font-weight: 400;
+    border-radius: 4px;
+    color: white;
+    margin: 10px 0px 0px 2px;
+    /* vertical-align: middle; */
+    font-size: 1.3em;
+    text-align: center;
+
+}
+
+#btn-info-curation {
+    /* font-size: 1.3em;
+    text-align: center; */
+    /* line-height: 48px; */
+    background-color: transparent;
+    border: 2px solid white;
+    /* vertical-align: middle; */
+}
+
+#btn-reserv-curation {
+    background-color: rgb(38, 162, 193);
+    border: 2px solid rgb(38, 162, 193);
+}
+
+/*** 큐레이션 오른쪽 부분 ***********************/
+.curation-right {
+    flex: 1;
+    border: 0.3px solid black;
+    padding-left: 40px;
+}
+
+/*** .curation-top 부분 *****/
+#curation-moreCu {
+    text-align: right;
+    line-height: 40px;
+
+}
+
+#mainfilm-txt {
+    /* #필름소사이어티 부분 */
+    font-size: 1.2em;
+}
+
+#mainfilm-title {
+    /* 주요 공연 제목 - 이사 */
+    font-size: 40px;
+    display: block;
+    padding: 5px 0px 30px 0px;
+    /* block요소 이어야지 padding 이 잘 먹는것 같은데,, */
+}
+
+#mainfilm-summary {
+    display: block;
+    margin: 20px 0px 10px 0px;
+}
+
+/*** 큐레이션 다른 필름들  ******/
+.curation-films {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    color: white;
+    /* font-weight: 70; -> 여기서 넣으면 글자 굵기 안 먹음*/
+    /* 자간 줄이기, */
+
+    border: 0.3px solid black;
+}
+
+.curation-films-deep p {
+    letter-spacing: 0.08px;
+}
+
+.curation-films-deep img {
+    height: 270px;
+    width: 170px;
+    border-radius: 8px;
+}
+
 /*megaboxInfo******************************************************************/
-.megaboxInfo{
-    height: 250px;
+.megaboxInfo {
+    height: 640px;
     background-color: cadetblue;
+    color: black;
 }
+
+/***** 메가박스 : 제목 *******/
+.megaboxInfo h2 {
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px 38px 0px;
+}
+
+/***** 메가박스 : 기술 광고 부분 *******/
+#megaInfo-ad-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.megaInfo-ad {
+    height: 170px;
+    width: 170px;
+    overflow: hidden;
+}
+
+.megaInfo-ad img {
+    width: 170px; /* 오리지널 사이즈 */
+    height: 340px;
+    border-radius: 10px;
+}
+
+/***** 메가박스 : 공지 *******/
+/***** 메가박스 : CS *******/
+
 /*footer*/
-footer{
-    height: 100px;;
+footer {
+    height: 100px;
+    color: white;
     background-color: wheat;
 }
