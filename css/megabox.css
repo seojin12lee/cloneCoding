@@ -9,11 +9,35 @@
 li {
     list-style-type: none;
 }
+.banner-bottom a:hover,
+.boxoffice-menu-item a :hover,
+.curation a :hover,
+#notice-more a:hover
+.megaboxInfo-notice :hover,
+.megaCS a :hover,
+.fnb a:hover{
+    text-decoration: underline;
+}
 
 a {
     text-decoration: none;
+    /* color: white; */
+    /* 여기서 지정해버리면 모든 a링크의 글씨 색이 하얀색이 되어버리는데 
+    메가박스 안내와 풋터는 글자색이 검정색이어야 함. 따라서, 글자식은 해더별 별도 지정 필요 */
+}
+header a,
+#sitemap a,
+.boxoffice a,
+.curation a{
     color: white;
 }
+
+.megaboxInfo a,
+#footer a{
+    color: black;
+}
+
+
 
 .box {
     width: 1200px;
@@ -34,7 +58,6 @@ header {
     justify-content: space-between;
 
 }
-
 /***** 배너의 로고의 위쪽 부분 *****/
 .banner-top{
     display: flex;
@@ -81,6 +104,7 @@ header {
 }
 
 /*boxoffice*******************************************************************/
+/* 뒷배경 사진 삽입 및 블러 처리 */
 .boxoffice {
     height: 700px;
     /* background-image: url('./../img/background_img.jpg'); */
@@ -89,6 +113,11 @@ header {
     background-color: rgb(136, 135, 135);
     color: white;
 
+    /* position: absolute; */
+    left: 0;
+    top: 0;
+    z-index: -10;
+    
 }
 
 #background_img {
@@ -102,16 +131,14 @@ header {
     /* border: 0.3px solid black; */
     text-align: center;
     font-size: 30px;
+    position: relative;
 }
 
 /* 더 많은 영화보기  */
-#boxoffice--title span {
-    /* border: 0.3px solid black; */
-    display: flex;
+#boxoffice-title span {
     float: right;
     /* position: relative; */
-    bottom: 25px;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 /**** 박스오피스 영화 *****/
@@ -131,6 +158,8 @@ header {
     flex-direction: column;
     width: 250px;
     height: 350px;
+}
+.boxoffice-now_movie img {
     border-radius: 6px;
 }
 
@@ -138,6 +167,7 @@ header {
 .boxoffice-now_movie div {
     display: flex;
     margin-top: 6px;
+    gap: 5px;
 }
 
 .btn-heart {
@@ -151,7 +181,7 @@ header {
     height: 36px;
     width: 170px;
     background-color: rgb(38, 162, 193);
-    /* background-color: #037b94; */
+    /* border: 1px solid rgb(38, 162, 193); */
     border-radius: 5px;
 }
 
@@ -159,30 +189,47 @@ header {
 .boxoffice-menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    background-color: rgba(47, 47, 47, 0.633);
+    /* justify-content: space-evenly; */
     padding: 10px;
-}
-
-.boxoffice-menu {
-    border: 0.3px solid black;
-    /*[]  이미지 중앙 정렬  */
     align-items: center;
-    /* 돋보기 버트 -> 이미지 추가, 배경 없게, 입력창 옆에서 뜨도록 수정 */
+    height: 75px;
+    margin: 50px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* 입력창이 묶여있는  */
 #search-movieName-div {
-    border-bottom: 0.2px solid white;
+    border: none;
 }
 
 #search-movieName {
     /* margin: 100%;
     height: 100%; */
     background-color: transparent;
+    color: #fff;;
     padding: 7px;
-    outline: none;
+    outline: none; /* 투명도 0(안보임) ~ 1(잘보임) */
+    border: none;
+    border-bottom: 1px solid #423e3e;
+}
+#search-movieName::placeholder {
+    color: #fff;
+    opacity: 0.5;
+}
+#search-movieName-div button {
+    /* 돋보기 버트 -> 이미지 추가, 배경 없게, 입력창 옆에서 뜨도록 수정 */
+    background-color: transparent;
+    border: none;
 }
 
+/* 박스오피스 메뉴 : 상영시간표, 박스오피스, 빠른 예매 */
+.boxoffice-menu-item {
+    position: relative;
+    float: left;
+    width: 25%;
+    text-align: center;
+    border-left: 1px solid #423e3e;
+}
 .boxoffice-menu-item a {
     text-decoration: none;
     line-height: 30px;
@@ -214,12 +261,12 @@ header {
 .curation-top {
     height: 35px;
     margin: 50px 0px 40px 0px;
-    border: 0.3px solid black;
+    /* border: 0.3px solid black; */
 }
 
 /**** 큐레이션 왼쪽 부분 *************************/
 .curation{
-    border: 0.3px solid blue;
+    /* border: 0.3px solid blue; */
 }
 .curation .box{
     display: flex;
@@ -394,7 +441,6 @@ header {
 /*footer**********************************************************************/
 footer {
     height: 700px;
-    color: white;
     background-color: wheat;
     display: flex;
     flex-direction: column;
@@ -402,17 +448,39 @@ footer {
 
 /**** .footer-top ***********/
 .footer-top {
-    display: inline;
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2% 0px;
 }
 
 .fnb {
     display: flex;
     flex-direction: row;
+    
 }
 
 .fnb li {
     margin-right: 20px;
+}
+.privacy {
+    font-weight: bold;
+}
+.btn-looking-theater{
+    display: flex;
+    flex-direction: end;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid gray;
+    text-align: center;
+    background-color: transparent;
+    padding: 5px 0px;
+}
+.btn-looking-theater img {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
 }
 
 /**** .footer-bottom ******************/
@@ -422,16 +490,24 @@ footer {
     /* justify-content: space-between; */
     border: 0.2px solid black;
 }
-.footer-bottom img{
-
+#footer-logo{
+    object-fit: contain;
+    margin-right:20px;
 }
 /*** 회사정보 .footer-info ****/
 .footer-info {
-    /* display: inline-block; */
-    border: 0.2px solid black;
+    /* border: 0.2px solid black; */
+    font-size: small;    
 }
 
 /*** sns .footer-sns *****/
 .footer-sns{
     padding: 5px 10px;
+    display: flex;
+    flex-direction: row;
+}
+.footer-sns img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
