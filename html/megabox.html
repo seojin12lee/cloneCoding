@@ -9,16 +9,17 @@
 </head>
 
 <body>
-  <!-- 배너 -->
-  <header>
-    <!-- 배너 : 로고 왼쪽 -->
-    <section class="Banner-left">
-      <div class="Banner--customerMenu-left">
-        <ul>
+  <section class="box">
+    <!-- 배너 -->
+    <header>
+      <!-- 배너 : 배너 윗쪽 링크 부분 -->
+      <div class="banner-top">
+        <ul class="banner-top-left">
           <li><a href="">VIP LOUNGE</a></li>
           <li><a href="">멤버십</a></li>
           <li><a href="">고객센터</a></li>
         </ul>
+<<<<<<< HEAD
         <ul>
           <li>전체 메뉴</li>
           <li>검색</li>
@@ -60,79 +61,360 @@
     <!-- 사이트맵 메뉴 좌하단: company -->
     <!-- 사이트맵 메뉴 우측:  right-->
   </header>
+=======
+        <ul class="banner-top-right">
+          <li><a href="">로그인</a>로그인</li>
+          <li><a hreg="">회원가입</a></li>
+          <li><a href="">고객센터</a></li>
+        </ul>   
+      </div>
+      <!-- 배너 : 로고 -->
+      <div id="banner-logo">
+        <img src="./../img/logo-white_new2.png" alt="magabox-logo" height="40px">
+      </div>
+      <!-- 배너 : 배너 아랫칸 메뉴 부분 -->
+      <section class="banner-bottom">
+        <nav>
+          <ul class="Banner--siteMenu-left">
+            <li><a href="">전체 메뉴</a></li>
+            <li><a href="">검색</a></li>
+            
+            <li><a href="">VIP LOUNGE</a></li>
+            <li><a href="">멤버십</a></li>
+            <li><a href="">고객센터</a></li>
+          </ul>
+        </nav>
+        <nav>
+          <ul class="Banner--siteMenu-right">
+            <li><img src="./../img/gnb-txt-event-white.png" alt="이벤트"></li>
+            <li><img src="../img/gnb-txt-store-white.png" alt="스토어"></li>
+            <li><img src="../img/gnb-txt-benefit-white.png" alt="혜택"></li>
+>>>>>>> 42334d09105a47002ad46e95f2b3854194152617
 
-  <main> <!-- 박스오피스 -->
-    <nav class="boxoffice">
-      <div id="boxoffice-titile"></div>
-      <div id="boxoffice-more"></div>
+            <li><img src="../img/ico-schedule-white.png" alt="캘린더"></li>
+            <li><img src="../img/ico-mymega-white.png" alt="계정"></li>
+          </ul>
+        </nav>
+
+      </section>
+    </header>
+
+    <!-- 사이트맵 ------------------------------------------------------------------>
+    <section id="sitemap">
+      <!-- 사이트맵 메뉴 좌상단: movie -->
+      <div class="sitemap">movie</div>
+      <!-- 사이트맵 메뉴 좌하단: company -->
+      <div class="sitemap">compant</div>
+      <!-- 사이트맵 메뉴 우측:  right-->
+      <div class="sitemap">right</div>
+    </section>
+
+    <!-- 박스오피스 ----------------------------------------------------------------->
+    <main class="boxoffice">
+      <!-- <img src="../img/background_img.jpg" alt="" id="background_img"> -->
+      <div id="boxoffice--title">
+        박스오피스
+        <span>더 많은 영화보기 +</span>
+      </div>
       <div class="boxoffice-movie-">
-        <span>박스오피스</span>
-        <span>더 많은 영화보기 <img src="" alt="+모양 아이콘"></span>
         <ul>
-          <li id="boxoffice-now_movie"><img src="" alt="영화포스터1"><span></span><span></span></li>
-          <li id="boxoffice-now_movie"><img src="" alt="영화포스터2"><span></span><span></span></li>
-          <li id="boxoffice-now_movie"><img src="" alt="영화포스터3"><span></span><span></span></li>
-          <li id="boxoffice-now_movie"><img src="" alt="영화포스터4"><span></span><span></span></li>
+          <li class="boxoffice-now_movie"><img src="../img/movie1.jpg" alt="영화포스터1">
+            <div>
+              <button type="submit" class="btn-heart">
+                <img src="../img/ico-heart-toggle-main.png" alt="하트이모지"></button>
+              <button type="button" class="btn-reserv">예매</button>
+            </div>
+          </li>
+          <li class="boxoffice-now_movie"><img src="../img/movie2.jpg" alt="영화포스터2">
+            <div>
+              <button type="submit" class="btn-heart">
+                <img src="../img/ico-heart-toggle-main.png" alt="하트이모지"></button>
+              <button type="button" class="btn-reserv">예매</button>
+            </div>
+          </li>
+          <li class="boxoffice-now_movie"><img src="../img/movie3.jpg" alt="영화포스터3">
+            <div>
+              <button type="submit" class="btn-heart">
+                <img src="../img/ico-heart-toggle-main.png" alt="하트이모지"></button>
+              <button type="button" class="btn-reserv">예매</button>
+            </div>
+          </li>
+          <li class="boxoffice-now_movie"><img src="../img/movie4.jpg" alt="영화포스터4">
+            <div>
+              <button type="submit" class="btn-heart">
+                <img src="../img/ico-heart-toggle-main.png" alt="하트이모지"></button>
+              <button type="button" class="btn-reserv">예매</button>
+            </div>
+          </li>
         </ul>
       </div>
-      <div class="boxoffice-menu">
-        <ul>
-          <li id="boxoffice-menu1">
-            <div>boxoffice-menu1</div>
-            <img src="" alt="영화포스터1">
-            <button></button>
+      <!-- 박스오피스 ： 영화 메뉴칸 -->
+      <div class="boxoffice-menu"> <!-- 영화명으로 검색, 상영시간표, 박스오피스, 빠른 예매-->
+        <div class="boxoffice-menu-item" id="search-movieName-div">
+          <!-- 입력창과 검색 버튼을 묶음-->
+          <input type="text" placeholder="영화명을 입력해 주세요" id="search-movieName">
+          <button type="button"><img src="../img/ico-search-white.png" alt="돋보기"></button>
+        </div>
+        <div class="boxoffice-menu-item">
+          <img src="../img/ico-schedule-main.png" alt="영화 메뉴 상영시간표 아이콘">
+          <a href="">상영시간표</a>
+        </div>
+        <div class="boxoffice-menu-item">
+          <img src="../img/ico-boxoffice-main.png" alt="박스오피스 메뉴 박스오피스 아이콘">
+          <a href="">박스오피스</a>
+        </div>
+        <div class="boxoffice-menu-item">
+          <img src="../img/ico-quick-reserve-main.png" alt="박스오피스 메뉴 빠른예매 아이콘">
+          <a href="">빠른예매</a>
+        </div>
+      </div>
+      <!-- //박스오피스 : 영화 메뉴칸 -->
+
+      <!-- 박스오피스 마우스 아이콘 -->
+      <div id="boxoffice-mouse">
+        <img src="../img/ico-mouse.png" alt="마우스">
+      </div>
+    </main>
+    <!-- //박스오피스 끝 -->
+
+    <!-- 큐레이션 ------------------------------------------------------------------>
+    <section class="curation">
+      <section>
+
+      </section>
+      <!---- 큐레이션 왼쪽 섹션------>
+      <section class="curation-left">
+        <!-- 큐레이션 : 제목 -->
+        <div class="curation-top" id="curation-title">
+          <h2>큐레이션</h2>
+        </div>
+        <!-- 큐레이션 : 메인 공연(포스터,상세정보, 예메) -->
+        <div id="curation-mainFilm">
+          <!-- 포스터 -->
+          <img src="../img/flimPoster1.jpg" alt="영화포스터2">
+          <!-- 상세정보, 예매 버튼 -->
+          <div>
+            <button type="button" id="btn-info-curation">상세정보</button>
+            <button type="button" id="btn-reserv-curation">예매</button>
+          </div>
+        </div>
+      </section>
+
+
+      <!------ 큐레이션 : 오른쪽 섹션 ------>
+      <section class="curation-right">
+        <!-- 큐레이션 : 큐레이션 더보기 -->
+        <div class="curation-top" id="curation-moreCu">
+          <a href="">큐레이션 더보기</a>
+          <img src="../img/ico-more-cross-gray.png" alt="">
+        </div>
+
+        <!-- 큐레이션 : 주요공연정보 -->
+        <div class="film-info">
+          <p id="mainfilm-txt">#<span>필름소사이어티</span></p>
+          <p id="mainfilm-title">이사</p>
+          <hr>
+          <p id="mainfilm-summary">
+            화목한 가정을 자부하던 6학년 소녀 렌<br>어느 날 아빠가 집을 나가고 엄마가 이혼을 선언했다.<br><br>“나는 엄마 아빠가 싸워도 참았어<br>근데 왜 엄마 아빠는 못 참는
+            거야?”<br><br>엄마가 만든 ‘둘을 위한 계약서’도 싫고</p>
+        </div>
+        <!-- 큐레이션 : 다른 공연 -->
+        <ul class="curation-films">
+          <li>
+            <div class="curation-films-deep">
+              <img src="../img/filmPoster2.jpg" alt="공연포스터2">
+              <p>미세리코르디아</p>
+            </div>
           </li>
-          <li id="boxoffice-menu2">
-            <div>boxoffice-menu2</div>
+          <li>
+            <div class="curation-films-deep">
+              <img src="../img/filmPoster3.jpg" alt="공연포스터3">
+              <p>반고흐. 밀밭과 구름 낀 하늘</p>
+            </div>
           </li>
-          <li id="boxoffice-menu3">
-            <div>boxoffice-menu3</div>
+          <li>
+            <div class="curation-films-deep">
+              <img src="../img/filmPoster4.jpg" alt="공연포스터4">
+              <p>스오라로우테일 버터플라이</p>
+            </div>
           </li>
-          <li id="boxoffice-menu4">
-            <div>boxoffice-menu4</div>
+          <li>
+            <div class="curation-films-deep">
+              <img src="../img/filmPoster5.jpg" alt="공연포스터5">
+              <p>여름이 지나가면</p>
+            </div>
           </li>
         </ul>
+
+        </div>
+      </section>
+    </section>
+
+    <!-- 메가박스 안내 --------------------------------------------------------------->
+    <section class="megaboxInfo">
+      <!-- 메가박스 안내 : 제목 -->
+      <h2>메가박스 안내</h2>
+      <!-- 메가박스 안내 : 기술 광고 -->
+      <ul id="megaInfo-ad-container">
+        <li>
+          <div>
+            <button type="button" class="meagIngo-contoll-left">
+              <img src="../img/btn-specialtheater-prev.png" alt="">
+            </button>
+          </div>
+        </li>
+        <li>
+          <div class="megaInfo-ad">
+            <img src="../img/bg-main-dolbycinema.png" alt="">
+            <a href=""></a>
+          </div>
+        </li>
+        <li>
+          <div class="megaInfo-ad">
+            <img src="../img/bg-main-dolbyatmos.png" alt="">
+            <a href=""></a>
+          </div>
+        </li>
+        <li>
+          <div class="megaInfo-ad">
+            <img src="../img/bg-main-mx4d.png" alt="">
+            <a href=""></a>
+          </div>
+        </li>
+        <li>
+          <div class="megaInfo-ad">
+            <img src="../img/bg-main-dolbyatmos.png" alt="">
+            <a href=""></a>
+          </div>
+        </li>
+        <li>
+          <div class="megaInfo-ad">
+            <img src="../img/bg-main-led.png" alt="">
+            <a href=""></a>
+          </div>
+        </li>
+        <li>
+          <div class="megaInfo-ad">
+            <img src="../img/bg-main-boutiq.png" alt="">
+            <a href=""></a>
+          </div>
+        </li>
+        <li>
+          <div><button type="button" class="meagIngo-contoll-right">
+              <img src="../img/btn-specialtheater-next.png" alt="">
+            </button></div>
+        </li>
+        </div>
+      </ul>
+      <!-- //메가박스 안내 : 기술 광고 -->
+
+      <!-- 메가박스 안내 : 공지 -->
+      <div class="megaInfo-notice-container">
+        <p id="notice-title">메가박스</p>
+        <p id="notice">
+          <strong>"[공지]"</strong>
+          2025년 &lt발레리나&gt 빵원티켓플러스 일정 변경 안내
+        </p>
+        <p id="notice-date">2025.07.25</p>
+        <p id="notice-more">
+          더보기<img src="../img/ico-arr-right-gray.png" alt="">
+        </p>
       </div>
-    </nav>
-  </main>
 
-  <!-- 큐레이션 -->
-  <section class="curation">큐레이션 curation
-    <!-- 큐레이션 : 제목 -->
-    <div class="boxoffice--title">
+      <!-- 메가박스 안내 : CS -->
+      <!-- 제일 위에서 a 태그 컬러 수정 -->
+      <ul class="megaCS-container">
+        <li>
+          <div class="megaCS"><a href="">
+              <img src="../img/ico-main-customer.png" alt="고객센터">
+              <p>고객센터</p>
+            </a></div>
+        </li>
+        <li>
+          <div class="megaCS"><a href="">
+              <img src="../img/ico-main-faq.png" alt="자주 묻는 질문">
+              <p>자주 묻는 질문</p>
+            </a></div>
+        </li>
+        <li>
+          <div class="megaCS"><a href="">
+              <img src="../img/ico-main-qna.png" alt="1:1 문의">
+              <p>1:1 문의</p>
+            </a></div>
+        </li>
+        <li>
+          <div class="megaCS"><a href="">
+              <img src="../img/ico-main-group.png" alt="단체/대관 문의">
+              <p>단체/대관 문의</p>
+            </a></div>
+        </li>
+        <li>
+          <div class="megaCS"><a href="">
+              <img src="../img/ico-main-lost.png" alt="분실문 문의/접수">
+              <p>분실물 문의/접수</p>
+            </a></div>
+        </li>
+        <li>
+          <div class="megaCS"><a href="">
+              <img src="../img/ico-main-boutique.png" alt="더 부티크">
+              <p>더 부티크 프라이빗<br>대관예매</p>
+            </a></div>
+        </li>
+      </ul>
 
-    </div>
-    <!-- 큐레이션 : 큐레이션 더보기 -->
-    <div class="curation--more-curation">
+    </section>
 
-    </div>
-    <!-- 큐레이션 : 주요공연 -->
-    <aside class="">
-      <div><img src="" alt="main-theater"></div>
-    </aside>
-    <!-- 큐레이션 : 주요공연정보 -->
-    <!-- 큐레이션 : 다른 공연 -->
+    <!-- 풋터 --------------------------------------------------------------------->
+    <!-- a 태그 글자 색 변경 필요 -->
+    <footer id="footer">
+      <!-- footer-top -->
+      <div class="footer-top">
 
+        <ul class="fnb">
+          <li><a href="" title="회사소개 페이지로 이동">회사소개</a></li>
+          <li><a href="" title="인재채용 페이지로 이동">인재채용</a></li>
+          <li><a href="" title="사회공헌 페이지로 이동">사회공헌</a></li>
+          <li><a href="" title="제휴/광고/부대사업문의 페이지로 이동">제휴/광고/부대사업문의</a></li>
+          <li><a href="" title="이용약관 페이지로 이동">이용약관</a></li>
+          <li class="privacy"><a href="" title="위치기반서비스 이용약관 페이지로 이동">위치기반서비스 이용약관</a></li>
+          <li class="privacy"><a href="" title="개인정보처리방침 페이지로 이동">개인정보처리방침</a></li>
+          <li><a href="https://jebo.joonganggroup.com" target="_blank" title="윤리경영 페이지로 이동">윤리경영</a></li>
+        </ul>
+
+        <a href="" title="극장찾기" class="btn-looking-theater">극장찾기</a>
+
+      </div>
+      <!--// footer-top -->
+
+      <!-- footer-bottom -->
+      <div class="footer-bottom">
+
+        <img src="../img/logo-opacity_new2.png" alt="">
+
+        <div class="footer-info">
+          서울특별시 강남구 테헤란로 87길 22 도심공항터미널 건물 408호
+          ARS 1544-0070 대표이메일 m.dreamcenter@partner.megabox.co.kr 대표자명 홍정인, 남용석
+          · 개인정보보호책임자 김수현
+          · 사업자등록번호 211-86-59478
+          · 통신판매업신고번호 2025-서울강남-00722
+          class="copy">COPYRIGHT © MegaboxJoongAng, Inc. All rights reserved
+        </div> <!-- //.footer-info -->
+
+        <div class="footer-sns">
+          <a href="https://www.youtube.com/onmegabox" target="_blank" title="MEGABOX 유튜브 페이지로 이동">
+            <img src="../img/ico-youtubeN.png" alt="유튜브아이콘"></a>
+          <a href="http://instagram.com/megaboxon" target="_blank" title="MEGABOX 인스타그램 페이지로 이동">
+            <img src="../img/ico-instagramN.png" alt="인스타그램 아이콘"></a>
+          <a href="https://www.facebook.com/megaboxon" target="_blank" title="MEGABOX 페이스북 페이지로 이동">
+            <img src="../img/ico-facebookN.png" alt="페이스북 아이콘"></a>
+          <a href="https://twitter.com/megaboxon" target="_blank" title="MEGABOX 트위터 페이지로 이동">
+            <img src="../img/ico-twitterN.png" alt="트위터 아이콘"></a>
+        </div> <!-- // .footer-sns-->
+      </div>
+      <!--// footer-bottom -->
+    </footer>
+    <!--// footer -->
   </section>
-
-  <!-- 메가박스 안내 -->
-  <section class="megaboxInfo">
-    메가박스 안내
-    <!-- 메가박스 안내 : 제목 -->
-    <!-- 메가박스 안내 : 기술 광고 -->
-    <!-- 메가박스 안내 : 공지 -->
-    <!-- 메가박스 안내 : CS -->
-  </section>
-
-  <!-- 풋터 -->
-  <footer>
-    풋터
-    <!-- 풋터 : 회사소개 링크 about us -->
-    <!-- 풋터 : 극장 찾기 -->
-    <!-- 풋터 : 회사정보 -->
-
-  </footer>
-
 </body>
 
 </html>
