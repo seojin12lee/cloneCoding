@@ -16,89 +16,72 @@ a {
 }
 
 .box {
+    width: 1200px;
     margin: 0px 120px;
 }
 
 /*banner**********************************************************************/
 header {
-    padding: 0px 100px;
+    /* padding: 0px 100px; */
     border: 0.3px solid black;
     height: 50px;
-    /*100px*/
     width: 100%;
     background-color: grey;
-    display: flex;
-    justify-content: space-between;
     font-size: 10px;
     color: white;
-
-}
-
-/***** 배너의 로고의 왼쪽 부분 *****/
-.Banner--left {
     display: flex;
     flex-direction: column;
-    border: 0.3px solid black;
-    width: 40%;
+    justify-content: space-between;
+
 }
 
-/* 왼쪽 부분 상단 */
-.Banner--customerMenu-left {
-    border: 0.3px solid black;
-    /*display: inline; /*border + display -> 테두리가 사라질 수 있따*/
+/***** 배너의 로고의 위쪽 부분 *****/
+.banner-top{
     display: flex;
-    flex-direction: row;
-    float: left;
-    width: 50%;
+    justify-content: space-between;
 }
-
-/* 왼쪽 부분 하단 */
-.Banner--siteMenu-left {
-    border: 0.3px solid black;
+.banner-top ul{
     display: flex;
     flex-direction: row;
-    font-size: 15px;
+    /* justify-content: space-between; */
+}
+.banner-top-left{
+    /* display: flex;
+    flex-direction: row; */
+    border: 0.3px solid black;
+}
+.banner-top-right{
+    border: 0.3px solid black;
+
 }
 
 /***** 배너의 로고 부분 *****/
-#Banner--logo {
+#banner-logo {
     border: 0.3px solid black;
     width: 100px auto;
 }
 
-/***** 배너의 로고의 오른쪽 부분 *****/
-.Banner--right {
-    border: 0.3px solid black;
+/***** 배너의 로고의 아래쪽 부분 *****/
+.banner-bottom{
     display: flex;
-    flex-direction: column;
-    width: 40%;
+    justify-content: space-between;
 }
-
-/* 오른쪽 부분 상단 */
-.Banner--customerMenu-right {
-    border: 0.3px solid black;
+.banner-bottom ul{
     display: flex;
     flex-direction: row;
-    float: right;
+    border: 0.3px solid black;
 }
 
-/* 오른쪽 부분 하단 */
-.Banner--siteMenu-right {
-    border: 0.3px solid black;
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-}
 
 /*sitemap*********************************************************************/
 #sitemap .sitemap {
     display: ;
     color: white;
-
+    background-color: blanchedalmond;
 }
 
 /*boxoffice*******************************************************************/
-main {
+.boxoffice {
     height: 700px;
     /* background-image: url('./../img/background_img.jpg'); */
     background-repeat: no-repeat;
@@ -113,11 +96,8 @@ main {
 }
 
 /**** 박스오피스 제목라인 ****/
-#boxoffice--title {
-    /* display: inline-block;  */
-}
 
-#boxoffice--title {
+#boxoffice-title {
     text-decoration: underline white;
     /* border: 0.3px solid black; */
     text-align: center;
@@ -238,11 +218,20 @@ main {
 }
 
 /**** 큐레이션 왼쪽 부분 *************************/
+.curation{
+    border: 0.3px solid blue;
+}
+.curation .box{
+    display: flex;
+    /* gap: 16px; */
+    justify-content: space-around
+}
+
 .curation-left {
     /* border: 0.3px solid black; */
     width: 300px;
     /* 너비 지정 */
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 /*** .curation-top 부분 *****/
@@ -293,9 +282,10 @@ main {
 
 /*** 큐레이션 오른쪽 부분 ***********************/
 .curation-right {
-    flex: 1;
-    border: 0.3px solid black;
-    padding-left: 40px;
+    width: 700px;
+    /* border: 0.3px solid rgb(78, 3, 3); */
+    /* padding-left: 40px; */
+    /* position: absolute; */
 }
 
 /*** .curation-top 부분 *****/
@@ -333,7 +323,7 @@ main {
     /* font-weight: 70; -> 여기서 넣으면 글자 굵기 안 먹음*/
     /* 자간 줄이기, */
 
-    border: 0.3px solid black;
+    /* border: 0.3px solid black; */
 }
 
 .curation-films-deep p {
