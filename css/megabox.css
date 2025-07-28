@@ -1,8 +1,8 @@
 *{
     margin:0;
     padding:0;
-    border: 0.3px solid black;
 }
+
 li{
     list-style-type: none;
 }
@@ -44,17 +44,21 @@ header nav, header span{
 }
 /*boxoffice*******************************************************************/
 main{
+    height: 500px;
     background-color: rgb(149, 217, 235);
 }
 /*curation********************************************************************/
 .curation{
     background-color: mediumpurple;
+    height: 400px;
 }
 /*megaboxInfo******************************************************************/
 .megaboxInfo{
+    height: 350px;
     background-color: cadetblue;
 }
 /*footer*/
 footer{
+    height: 150px;
     background-color: wheat;
 }
