@@ -14,6 +14,10 @@ a {
     color: white;
 }
 
+.box {
+    margin: 0px 120px;
+}
+
 /*banner**********************************************************************/
 header {
     padding: 0px 100px;
@@ -87,7 +91,7 @@ header {
 
 /*sitemap*********************************************************************/
 #sitemap .sitemap {
-    display: hidden;
+    display: ;
     color: white;
 
 }
@@ -195,6 +199,7 @@ main {
     height: 100%; */
     background-color: transparent;
     padding: 7px;
+    outline: none;
 }
 
 .boxoffice-menu-item a {
@@ -369,17 +374,74 @@ main {
 }
 
 .megaInfo-ad img {
-    width: 170px; /* 오리지널 사이즈 */
+    width: 170px;
+    /* 오리지널 사이즈 */
     height: 340px;
     border-radius: 10px;
 }
 
 /***** 메가박스 : 공지 *******/
-/***** 메가박스 : CS *******/
+.megaboxInfo-notice-container {
+    /* 여기는 리스트 */
+    display: flex;
+    flex-direction: row;
+}
 
-/*footer*/
+/***** 메가박스 : CS *******/
+.megaCS-container {
+    /* 여기는 div 안에 블럭요소들 */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.megaCS {
+    text-align: center;
+}
+
+.megaCS {}
+
+/*footer**********************************************************************/
 footer {
-    height: 100px;
+    height: 700px;
     color: white;
     background-color: wheat;
+    display: flex;
+    flex-direction: column;
+}
+
+/**** .footer-top ***********/
+.footer-top {
+    display: inline;
+
+}
+
+.fnb {
+    display: flex;
+    flex-direction: row;
+}
+
+.fnb li {
+    margin-right: 20px;
+}
+
+/**** .footer-bottom ******************/
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    border: 0.2px solid black;
+}
+.footer-bottom img{
+
+}
+/*** 회사정보 .footer-info ****/
+.footer-info {
+    /* display: inline-block; */
+    border: 0.2px solid black;
+}
+
+/*** sns .footer-sns *****/
+.footer-sns{
+    padding: 5px 10px;
 }
