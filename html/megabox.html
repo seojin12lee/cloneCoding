@@ -20,6 +20,10 @@
           <li><a href="">멤버십</a></li>
           <li><a href="">고객센터</a></li>
         </ul>
+        <!-- 배너 : 로고 -->
+        <!-- <div id="banner-logo">
+          <img src="./../img/logo-white_new2.png" alt="magabox-logo" height="40px">
+        </div> -->
         <!-- 배너 : 배너 윗칸 메뉴 부분 - 오른쪽 -->
         <ul class="banner-top-right">
           <li><a href="">로그인</a></li>
@@ -29,54 +33,81 @@
       </div>
       
       <!-- 배너 : 배너 아랫칸 메뉴 부분 -->
-      <nav class="banner-bottom">
-        <!-- 배너 : 배너 아랫칸 메뉴 부분 - 왼쪽 -->
-        <ul class="banner-bottom-left">
-          <li><img src="../img/ico-sitemap-white.png" alt="전체메뉴">
-          </li>
-          <li><img src="../img/ico-search-white.png" alt="검색">
-          </li>
-
-          <li><img src="./../img/gnb-txt-movie-white.png" alt="영화">
-          </li>
-          <li><img src="../img/gnb-txt-reserve-white.png" alt="예매">
-          </li>
-          <li><img src="../img/gnb-txt-theater-white.png" alt="극장">
-          </li>
-        </ul>
-        <!-- 배너 : 로고 -->
-        <div id="banner-logo">
-          <img src="./../img/logo-white_new2.png" alt="magabox-logo" height="40px">
-        </div>
-        <!-- 배너 : 배너 아랫칸 메뉴 부분 - 오른쪽 -->
-        <ul class="banner-bottom-right">
-          <li><img src="./../img/gnb-txt-event-white.png" alt="이벤트">
-          </li>
-          <li><img src="../img/gnb-txt-store-white.png" alt="스토어">
-          </li>
-          <li><img src="../img/gnb-txt-benefit-white.png" alt="혜택">
-          </li>
-
-
-          <li><img src="../img/ico-schedule-white.png" alt="캘린더">
-          </li>
-          <li><img src="../img/ico-mymega-white.png" alt="계정">
-          </li>
+      <section  class="banner-bottom">
+      <div>
+        <img src="../img/ico-sitemap-white.png" alt="">
+        <img src="../img/ico-search-white.png" alt="">
+      </div>
+      <nav id="gnb" class="">
+        <ul class="gnb-depth1">
+            <li class=""><a href="/movie" class="gnb-txt-movie" title="영화">영화</a>
+                <div class="gnb-depth2">
+                    <ul>
+                        <li><a href="/movie" title="전체영화">전체영화</a></li>
+                        <li id="festivalArea" style="display: none;"><a href="/festival" title="영화제">영화제</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class=""><a href="/booking" class="gnb-txt-reserve" title="예매">예매</a>
+                <div class="gnb-depth2">
+                    <ul>
+                        <li><a href="/booking" title="빠른예매">빠른예매</a></li>
+                        <li><a href="/booking/timetable" title="상영시간표">상영시간표</a></li>
+                        <li><a href="/booking/privatebooking" title="더 부티크 프라이빗 예매">더 부티크 프라이빗 예매</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class=""><a href="/theater/list" class="gnb-txt-theater" title="극장">극장</a>
+                <div class="gnb-depth2">
+                    <ul>
+                        <li><a href="/theater/list" title="전체극장">전체극장</a></li>
+                        <li><a href="/specialtheater/list" title="특별관">특별관</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+              <div id="banner-logo">
+                <img src="./../img/logo-white_new2.png" alt="magabox-logo" height="40px">
+              </div>
+            </li>
+            <li><a href="/event" class="gnb-txt-event" title="이벤트">이벤트</a>
+                <div class="gnb-depth2">
+                    <ul>
+                        <li><a href="/event" title="진행중 이벤트">진행중 이벤트</a></li>
+                        <li><a href="/event/end" title="지난 이벤트">지난 이벤트</a></li>
+                        <li><a href="/event/winner/list" title="당첨자발표">당첨자발표</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="/store" class="gnb-txt-store" title="스토어">스토어</a></li>
+            <li><a href="/benefit/membership" class="gnb-txt-benefit" title="혜택">혜택</a>
+                <div class="gnb-depth2">
+                    <ul>
+                        <li><a href="/benefit/membership" title="메가박스 멤버십">메가박스 멤버십</a></li>
+                        <li><a href="/benefit/discount/guide" title="제휴/할인">제휴/할인</a></li>
+                    </ul>
+                </div>
+            </li>
         </ul>
       </nav>
+      <div>
+        <img src="../img/ico-schedule-white.png" alt="">
+        <img src="../img/ico-mymega-white.png" alt="">
+      </div>
+    </section> <!-- //헤더 아래 라인-->
     </section>
     </header>
 
     <!-- 사이트맵 ------------------------------------------------------------------>
     <section id="sitemap">
-      <section class="box">
+      <!-- <section class="box"> -->
         <!-- 사이트맵 메뉴 좌상단: movie -->
-        <div class="sitemap">movie</div>
+        <!-- <div class="sitemap">movie</div> -->
         <!-- 사이트맵 메뉴 좌하단: company -->
-        <div class="sitemap">compant</div>
+        <!-- <div class="sitemap">compant</div> -->
         <!-- 사이트맵 메뉴 우측:  right-->
-        <div class="sitemap">right</div>
-      </section> <!-- //section.box -->
+        <!-- <div class="sitemap">right</div> -->
+      <!-- </section> //section.box -->
     </section>
 
     <!-- 박스오피스 ----------------------------------------------------------------->
@@ -284,7 +315,7 @@
       <div class="megaInfo-notice-container">
         <p id="notice-title">메가박스</p>
         <p id="notice">
-          <strong>"[공지]"</strong>
+          <strong>[공지]</strong>
           2025년 &lt발레리나&gt 빵원티켓플러스 일정 변경 안내
         </p>
         <p id="notice-date">2025.07.25</p>
