@@ -12,7 +12,7 @@ li {
 .banner-bottom a:hover,
 .boxoffice-menu-item a :hover,
 .curation a :hover,
-#notice-more a:hover
+#notice-more a:hover,
 .megaboxInfo-notice :hover,
 .megaCS a :hover,
 .fnb a:hover{
@@ -37,11 +37,10 @@ header a,
     color: black;
 }
 
-
-
 .box {
-    width: 1200px;
+    width: 80%;
     margin: 0px 120px;
+    align-content: center;
 }
 
 /*banner**********************************************************************/
@@ -50,7 +49,7 @@ header {
     border: 0.3px solid black;
     height: 120px;
     width: 100%;
-    background-color: grey;
+    background-color: rgba(37, 37, 37, 0.781);
     font-size: 10px;
     color: white;
     display: flex;
@@ -104,9 +103,20 @@ header {
     padding: 0 20px;
 }
 
+.header-open-layer-left img{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+.header-open-layer-right img{
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
 
 #gnb{
-    width: 1100px;
     display: flex;
     /* flex-direction:  */
     justify-content: space-evenly;
@@ -114,39 +124,62 @@ header {
 }   
 #gnb>.gnb-depth1{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* flex-direction: row; */
+    justify-content: space-evenly;
     gap: 10px;
     height: 50px;
     background-color: #339eb2;
     position: relative; /* 자식요소의 절대위치 기준 */
     /* border: 0.3px solid black; */
+    font-size: 20px;
+    font-weight: bold;
+    align-items: center;
+    width: 1000px;
 }
 .gnb-depth2>ul{
     display: flex;
     flex-direction: row;
     gap: 10px;
     width: 100%;
+    position: relative;
+    bottom: -10px;
     /* border: 0.3px solid black; */
 }
+
 /* 드롭다운의 숨겨진 컨텐츠(기본 숨김) */
 .gnb-depth2{ /*내부 메뉴 묶음*/
     display: none;
     position : absolute; /* 위치를 부모 기준으로 절대위치 설정*/
-    background-color: darkcyan;
+    /* background-color: #008b8b; */
     color : ghostwhite;
     width: 100%;
+    font-size: 16px;
+}
+.gnb-depth2-right ul{ /* 기본적으로 밑으로 뜨는 형식 - 단 전체가 뜸 */
+    display: flex;
+    position: relative;
+    bottom: -10px;
+    left: -100px;
 }
 
 /* 마우스 올렸을 때 드롭다운 컨텐츠 표시 */
+.gnb-depth2:hover,
 .gnb-depth1:hover .gnb-depth2{
     display: block;
+}
+/* 각 메인 메뉴를 hover하면 해당 하위 메뉴들만 나오게 설정 */
+.gnb-txt-movie:hover .gnb-txt-movie>.gnb-depth2{
+    display: block;
+    overflow: hidden;
+    position : absolute; /* 위치를 부모 기준으로 절대위치 설정*/
+    /* background-color: #008b8b; */
+    color : ghostwhite;
+    width: 100%;
+    font-size: 16px;
 }
 
 /*sitemap*********************************************************************/
 #sitemap .sitemap {
-    display: ;
-    color: white;
     background-color: blanchedalmond;
 }
 
@@ -179,6 +212,11 @@ header {
     text-align: center;
     font-size: 30px;
     position: relative;
+    margin-bottom: 20px;
+}
+#boxoffice-title a{
+    
+    text-decoration: underline 1px #423e3e;
 }
 
 /* 더 많은 영화보기  */
@@ -186,6 +224,7 @@ header {
     float: right;
     /* position: relative; */
     font-size: 17px;
+    margin-top: 10px;
 }
 
 /**** 박스오피스 영화 *****/
@@ -449,6 +488,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .megaInfo-ad {
@@ -463,12 +503,44 @@ header {
     height: 340px;
     border-radius: 10px;
 }
+.meagIngo-contoll-left,
+.meagIngo-contoll-right{
+    background-color: transparent;
+    border: none;
+}
 
 /***** 메가박스 : 공지 *******/
-.megaboxInfo-notice-container {
-    /* 여기는 리스트 */
+.megaInfo-notice-container{
     display: flex;
-    flex-direction: row
+    flex-direction: row;
+    align-items: center;
+    height: 30px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 50px 0px;
+    margin-top: 50px;
+    font-size: 15px;
+}
+#notice-title{
+    margin-right: 30px;
+    float: left;
+}
+#notice{
+    border-left: 1px solid grey;
+    padding-left: 20px;
+    width: 840px;
+}
+#notice strong{
+    color: #339eb2;
+    font-weight: bolder;
+}
+#noctice-date{
+    width: 100px;
+    border-right: 1px solid grey;
+}
+#notice-more{
+    text-align: right;
+    width: 100px;
 }
 
 /***** 메가박스 : CS *******/
@@ -477,7 +549,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
+    margin: 50px 0px;
 }
 
 .megaCS {
@@ -488,7 +560,7 @@ header {
 
 /*footer**********************************************************************/
 footer {
-    height: 700px;
+    height: 200px;
     background-color: #f8f8fa;
     display: flex;
     flex-direction: column;
